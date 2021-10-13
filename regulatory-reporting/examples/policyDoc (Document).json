@@ -1,0 +1,670 @@
+{
+    "policy": {
+        "poolAffiliationGroup": {
+            "legacyCode": "Lorem",
+            "description": "Lorem"
+        },
+        "perilCategories": [
+            {
+                "enumType": "Lorem",
+                "description": "Lorem",
+                "majorPeril": "Lorem",
+                "windHailCoverageStatus": "Lorem",
+                "awayFromPremisesTheftProtectionType": "Lorem",
+                "deductibles": [
+                    {
+                        "deductibleAmount": 0,
+                        "legacyCode": "Lorem",
+                        "deductibleType": "Lorem",
+                        "description": "Lorem",
+                        "type": "Lorem",
+                        "typeLegacyCode": "Lorem"
+                    }
+                ],
+                "limits": [
+                    {
+                        "limitAmount": 64,
+                        "legacyCode": "Lorem",
+                        "limitType": "Lorem",
+                        "category": "Lorem",
+                        "description": "Lorem",
+                        "minimumAmount": 35,
+                        "maximumAmount": -77,
+                        "rate": 34,
+                        "subcategory": "Lorem"
+                    }
+                ]
+            }
+        ],
+        "locations": [
+            {
+                "address": "Lorem"
+            }
+        ],
+        "deductibles": [
+            {
+                "deductibleAmount": 0,
+                "legacyCode": "Lorem",
+                "deductibleType": "Lorem",
+                "description": "Lorem",
+                "type": "Lorem",
+                "typeLegacyCode": "Lorem"
+            }
+        ],
+        "limits": [
+            {
+                "limitAmount": 64,
+                "legacyCode": "Lorem",
+                "limitType": "Lorem",
+                "category": "Lorem",
+                "description": "Lorem",
+                "minimumAmount": 35,
+                "maximumAmount": -77,
+                "rate": 34,
+                "subcategory": "Lorem"
+            }
+        ],
+        "policyForm": {
+            "description": "Lorem",
+            "versionNumber": "Lorem",
+            "legacyCode": "Lorem",
+            "policyFormEdition": "Lorem",
+            "businessInterruptionFlag": true,
+            "physicalDamageRequirement": true,
+            "viralExclusion": true,
+            "terrorismIndicator": "Lorem",
+            "terrorismIndicatorLegacyCode": "Lorem",
+            "tortLimitation": "Lorem",
+            "thresholdLimitation": "Lorem"
+        },
+        "lineOfInsurance": {
+            "legacyCode": "Lorem",
+            "description": "Lorem"
+        },
+        "personalPolicy": {
+            "stateExceptions": [
+                {
+                    "enumType": "Lorem",
+                    "legacyCode": "Lorem"
+                }
+            ],
+            "policyNumber": "Lorem",
+            "policyInceptionDate": "Lorem",
+            "reasonForNonRenewalCode": "Lorem",
+            "earnedExposureAmount": -19,
+            "consentToRate": "",
+            "cancelEffectiveDate": "Lorem",
+            "cancelEffectiveStatus": "Lorem",
+            "cancelExperationDate": "Lorem",
+            "cancelExperationStatus": "Lorem",
+            "policyStatus": "Lorem",
+            "policyEffectiveDate": "Lorem",
+            "policyEffectiveStatus": "Lorem",
+            "policyExperationDate": "Lorem",
+            "policyExperationStatus": "Lorem",
+            "programEnhancement": {
+                "indicator": "Lorem",
+                "description": "Lorem"
+            },
+            "additionalAutoIndicator": "Lorem",
+            "additionalAutoIndicatorLegacyCode": "Lorem",
+            "separateOrEndorsement": "Lorem",
+            "SeparateOrEndorsementLegacyCode": "Lorem",
+            "passiveRestraintDiscount": "Lorem",
+            "passiveRestraintDiscountCode": "Lorem",
+            "absDiscount": "Lorem",
+            "absDiscountCode": "Lorem",
+            "protectiveDeviceDiscount": "Lorem",
+            "protectiveDeviceDiscountCode": "Lorem",
+            "accidentPreventionCreditCode": "Lorem",
+            "accidentPreventionCredit": "Lorem",
+            "additionalAutoRiskDiscount": "Lorem",
+            "additionalAutoRisk": "Lorem",
+            "fiftyFiveAndOverDiscount": "Lorem",
+            "homeownershipDiscount": "Lorem",
+            "multiLineDiscount": "Lorem",
+            "paidInFullDiscount": "Lorem",
+            "renewalDiscount": "Lorem",
+            "reoccuringCustomerDiscount": "Lorem",
+            "renewalIndicator": "Lorem"
+        },
+        "interestedParty": {
+            "regionalOfficeCode": "Lorem",
+            "fullName": "Lorem"
+        },
+        "operator": {
+            "communicationPreferences": [
+                {
+                    "communicationTypes": [
+                        {
+                            "postalAddresses": [
+                                {
+                                    "city": "Lorem",
+                                    "region": "Lorem",
+                                    "countyName": "Lorem",
+                                    "addressLines": "Lorem",
+                                    "postalCode": "Lorem"
+                                }
+                            ]
+                        }
+                    ],
+                    "enumType": "Lorem",
+                    "type": "Lorem"
+                }
+            ],
+            "enumType": "Lorem",
+            "fullName": "Lorem",
+            "drivingPenaltyPoints": "Lorem",
+            "drivingPenaltyPointsLegacyCode": "Lorem",
+            "goodStudentDiscount": "Lorem",
+            "accidentPreventionClassLegacyCode": "Lorem",
+            "accidentPreventionClass": "Lorem",
+            "dateLicensed": "Lorem",
+            "numberOfMonthsSinceLastTrafficOffense": "Lorem",
+            "numberOfChargeableAtFaultAccidents": "Lorem",
+            "numberOfMonthsSinceLastChargeableAtFaultAccident": "Lorem",
+            "dateFirstInsuredWithCompany": "Lorem",
+            "numberOfChargeableAtFaultAccidentsBI": "Lorem",
+            "numberOfChargeableAtFaultAccidentsPD": "Lorem",
+            "numberOfAccidentsForgiven": "Lorem",
+            "numberOfComprehensiveClaims": "Lorem",
+            "principalOperatorFlag": "Lorem",
+            "tncDriver": "Lorem",
+            "sr22CertificateCertificateFlag": "Lorem",
+            "numberOfMinorTrafficOffenses": "Lorem",
+            "numberOfSignificantTrafficOffenses": "Lorem",
+            "dateOfBirth": "Lorem",
+            "numberOfMonthsSinceLastComprehensiveClaim": "Lorem"
+        },
+        "insured": {
+            "communicationPreferences": [
+                {
+                    "communicationTypes": [
+                        {
+                            "postalAddresses": [
+                                {
+                                    "city": "Lorem",
+                                    "region": "Lorem",
+                                    "countyName": "Lorem",
+                                    "addressLines": "Lorem",
+                                    "postalCode": "Lorem"
+                                }
+                            ]
+                        }
+                    ],
+                    "enumType": "Lorem",
+                    "type": "Lorem"
+                }
+            ],
+            "enumType": "Lorem",
+            "fullName": "Lorem",
+            "primaryHealthPlan": "Lorem",
+            "paperlessPolicyDocuments": "Lorem",
+            "yearsInsuredWithCurrentInsuranceCompany": "Lorem",
+            "yearsInsuredWithPriorInsuranceCompany": "Lorem"
+        },
+        "commercialPolicy": {
+            "policyNumber": "Lorem",
+            "programEnhancement": {
+                "indicator": "Lorem",
+                "description": "Lorem"
+            },
+            "additionalAutoIndicator": "Lorem",
+            "additionalAutoIndicatorLegacyCode": "Lorem",
+            "separateOrEndorsement": "Lorem",
+            "SeparateOrEndorsementLegacyCode": "Lorem",
+            "passiveRestraintDiscount": "Lorem",
+            "passiveRestraintDiscountCode": "Lorem",
+            "absDiscount": "Lorem",
+            "absDiscountCode": "Lorem",
+            "protectiveDeviceDiscount": "Lorem",
+            "protectiveDeviceDiscountCode": "Lorem",
+            "accidentPreventionCredit": "Lorem",
+            "accidentPreventionCreditCode": "Lorem",
+            "additionalAutoRisk": "Lorem",
+            "additionalAutoRiskDiscount": "Lorem",
+            "fiftyFiveAndOverDiscount": "Lorem",
+            "policyExperationDate": "Lorem",
+            "homeownershipDiscount": "Lorem",
+            "multiLineDiscount": "Lorem",
+            "paidInFullDiscount": "Lorem",
+            "renewalDiscount": "Lorem",
+            "reoccuringCustomerDiscount": "Lorem",
+            "renewalIndicator": "Lorem"
+        },
+        "program": {
+            "description": "Lorem",
+            "legacyCode": "Lorem"
+        },
+        "numberOfEmployees": 99,
+        "company": {
+            "name": "Lorem",
+            "code": "Lorem"
+        },
+        "annualStatementLineOfBusiness": {
+            "description": "Lorem",
+            "code": "Lorem"
+        },
+        "catastrophe": {
+            "code": "Lorem",
+            "description": "Lorem"
+        },
+        "taxID": "Lorem",
+        "autoIdentificationNumber": "Lorem",
+        "currencyPayment": {
+            "enumType": "Lorem",
+            "minimumAmount": 59,
+            "maximumAmount": -13,
+            "currencyPaymentAmount": -60,
+            "rate": 8,
+            "description": "Lorem",
+            "transactionCode": "Lorem",
+            "transactionType": "Lorem",
+            "monthsCovered": {
+                "legacyCode": "Lorem",
+                "description": "Lorem"
+            },
+            "accountStatement": {
+                "periodStartDate": "Lorem",
+                "periodEndDate": "Lorem"
+            }
+        },
+        "policyStructure": {
+            "limits": [
+                {
+                    "limitAmount": 64,
+                    "legacyCode": "Lorem",
+                    "limitType": "Lorem",
+                    "category": "Lorem",
+                    "description": "Lorem",
+                    "minimumAmount": 35,
+                    "maximumAmount": -77,
+                    "rate": 34,
+                    "subcategory": "Lorem"
+                }
+            ],
+            "coverages": [
+                {
+                    "earnedExposureAmount": 79,
+                    "exposureAmount": 94,
+                    "type": "Lorem",
+                    "description": "Lorem",
+                    "enumType": "Lorem",
+                    "scheduledPersonalPropertyAgreedValueIndicator": "Lorem",
+                    "leadPoisoningLiabilityStatus": "Lorem",
+                    "leadPoisoningExclusionStatus": "Lorem",
+                    "hurricaneExclusionEndorsementStatusType": "Lorem",
+                    "wrapAroundEndorsementStatusIndicator": "Lorem",
+                    "locations": [
+                        {
+                            "pitneyBowesCode": "Lorem",
+                            "geographicLocation": {
+                                "countyLegacyCode": "Lorem",
+                                "countyName": "Lorem",
+                                "postalCode": "Lorem",
+                                "stateLegacyCode": "Lorem",
+                                "stateName": "Lorem",
+                                "stateAbbreviation": "Lorem",
+                                "optionalZipIndicator": "Lorem",
+                                "territory": "Lorem",
+                                "territoryLegacyCode": "Lorem",
+                                "terminalZone": "Lorem",
+                                "terminalZoneLegacyCode": "Lorem",
+                                "accidentState": "Lorem",
+                                "accidentZip": "Lorem",
+                                "city": "Lorem",
+                                "areaIndicatorDescription": "Lorem",
+                                "areaIndicatorCode": "Lorem"
+                            }
+                        }
+                    ],
+                    "cancelEffectiveStatus": "Lorem",
+                    "cancelExperationStatus": "Lorem",
+                    "cancelExperationDate": "Lorem",
+                    "deductibles": [
+                        {
+                            "deductibleAmount": 0,
+                            "legacyCode": "Lorem",
+                            "deductibleType": "Lorem",
+                            "description": "Lorem",
+                            "type": "Lorem",
+                            "typeLegacyCode": "Lorem"
+                        }
+                    ],
+                    "limits": [
+                        {
+                            "limitAmount": 64,
+                            "legacyCode": "Lorem",
+                            "limitType": "Lorem",
+                            "category": "Lorem",
+                            "description": "Lorem",
+                            "minimumAmount": 35,
+                            "maximumAmount": -77,
+                            "rate": 34,
+                            "subcategory": "Lorem"
+                        }
+                    ],
+                    "riskClassification": {
+                        "lossSettlementIndicator": {
+                            "legacyCode": "Lorem",
+                            "category": "Lorem"
+                        },
+                        "description": "Lorem",
+                        "settlement": "Lorem",
+                        "legacyCode": "Lorem"
+                    },
+                    "uimUMCode": "Lorem",
+                    "buildingCodeEffectivenessGrade": {
+                        "legacyCode": "Lorem",
+                        "standardsClassification": "Lorem",
+                        "description": "Lorem"
+                    },
+                    "policyForm": {
+                        "description": "Lorem",
+                        "versionNumber": "Lorem",
+                        "legacyCode": "Lorem",
+                        "policyFormEdition": "Lorem",
+                        "businessInterruptionFlag": true,
+                        "physicalDamageRequirement": true,
+                        "viralExclusion": true,
+                        "terrorismIndicator": "Lorem",
+                        "terrorismIndicatorLegacyCode": "Lorem",
+                        "tortLimitation": "Lorem",
+                        "thresholdLimitation": "Lorem"
+                    },
+                    "currencyPayment": {
+                        "enumType": "Lorem",
+                        "minimumAmount": 59,
+                        "maximumAmount": -13,
+                        "currencyPaymentAmount": -60,
+                        "rate": 8,
+                        "description": "Lorem",
+                        "transactionCode": "Lorem",
+                        "transactionType": "Lorem",
+                        "monthsCovered": {
+                            "legacyCode": "Lorem",
+                            "description": "Lorem"
+                        },
+                        "accountStatement": {
+                            "periodStartDate": "Lorem",
+                            "periodEndDate": "Lorem"
+                        }
+                    },
+                    "stackingFlag": true,
+                    "category": "Lorem",
+                    "entryYearIntoClaimsMadeProgram": "Lorem",
+                    "liabilityExposureIndicatorCode": "Lorem",
+                    "liabilityExposureIndicatorDescription": "Lorem",
+                    "typeOfCoverageDescription": "Lorem",
+                    "typeOfCoverageCode": "Lorem"
+                }
+            ],
+            "enumType": "Lorem",
+            "exposureAmount": 1,
+            "description": "Lorem",
+            "leadPoisoningLiabilityStatusType": "Lorem",
+            "leadLiabilityExclusionStatusType": "Lorem",
+            "hurricaneExclusionEndorsementStatusType": "Lorem",
+            "wrapAroundEndorsementStatusIndicator": "Lorem",
+            "materialItems": [
+                {
+                    "physicalStructure": {
+                        "constructionDate": "Lorem",
+                        "constructionType": "Lorem",
+                        "occupationType": "Lorem",
+                        "designStyle": "Lorem",
+                        "roofShapeType": "Lorem",
+                        "renovationDate": "Lorem",
+                        "primaryResidence": true,
+                        "protectionClass": "Lorem",
+                        "enumType": "Lorem",
+                        "inspection": true,
+                        "restrictionStatus": "Lorem",
+                        "roofCoveringCategory": "Lorem",
+                        "leadLiabilityUnitCount": 22,
+                        "leadLiabilityInterimControlLetter": "Lorem",
+                        "leadPoisoningExclusionStatus": "Lorem",
+                        "leadPoisoningLiabilityStatus": "Lorem",
+                        "secondaryLossMitigationBuildingFeatureType": "Lorem",
+                        "windLossMitigationFeatureType": "Lorem",
+                        "roofToWallConnectionType": "Lorem",
+                        "roofDeckAttachmentType": "Lorem",
+                        "secondaryWaterResistanceRoofIndicator": true,
+                        "windResistanceOpeningProtection": "Lorem",
+                        "windstormProtectiveDevice": "Lorem",
+                        "windBorneDebrisIndicator": true,
+                        "roofDeckInternalPressureDesignType": "Lorem",
+                        "roofDeckMaximumWindSpeed": "Lorem",
+                        "roofDeckMaterial": "Lorem",
+                        "constructionYearBand": "Lorem",
+                        "stormShuttersPresent": "Lorem",
+                        "description": "Lorem",
+                        "constructionLegacyCode": "Lorem",
+                        "fireProtectionLegacyCode": "Lorem",
+                        "yearOfConstructionLegacyCode": "Lorem",
+                        "fireProtectionCategory": "Lorem",
+                        "occupancyLegacyCode": "Lorem",
+                        "numberOfFamiliesLegacyCode": "Lorem",
+                        "numberOfFamiliesCategory": "Lorem",
+                        "sprinklerSystemCode": "Lorem",
+                        "sprinklerSystemDescription": "Lorem"
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "pitneyBowesCode": "Lorem",
+                    "geographicLocation": {
+                        "countyLegacyCode": "Lorem",
+                        "countyName": "Lorem",
+                        "postalCode": "Lorem",
+                        "stateLegacyCode": "Lorem",
+                        "stateName": "Lorem",
+                        "stateAbbreviation": "Lorem",
+                        "optionalZipIndicator": "Lorem",
+                        "territory": "Lorem",
+                        "territoryLegacyCode": "Lorem",
+                        "terminalZone": "Lorem",
+                        "terminalZoneLegacyCode": "Lorem",
+                        "accidentState": "Lorem",
+                        "accidentZip": "Lorem",
+                        "city": "Lorem",
+                        "areaIndicatorDescription": "Lorem",
+                        "areaIndicatorCode": "Lorem"
+                    },
+                    "addressNumber": "Lorem",
+                    "streetName": "Lorem"
+                }
+            ],
+            "deductibles": [
+                {
+                    "deductibleAmount": 0,
+                    "legacyCode": "Lorem",
+                    "deductibleType": "Lorem",
+                    "description": "Lorem",
+                    "type": "Lorem",
+                    "typeLegacyCode": "Lorem"
+                }
+            ],
+            "riskClassification": {
+                "lossSettlementIndicator": {
+                    "legacyCode": "Lorem",
+                    "category": "Lorem"
+                },
+                "description": "Lorem",
+                "settlement": "Lorem",
+                "legacyCode": "Lorem"
+            },
+            "buildingCodeEffectivenessGrade": {
+                "legacyCode": "Lorem",
+                "standardsClassification": "Lorem",
+                "description": "Lorem"
+            },
+            "policyForm": {
+                "description": "Lorem",
+                "versionNumber": "Lorem",
+                "legacyCode": "Lorem",
+                "policyFormEdition": "Lorem",
+                "businessInterruptionFlag": true,
+                "physicalDamageRequirement": true,
+                "viralExclusion": true,
+                "terrorismIndicator": "Lorem",
+                "terrorismIndicatorLegacyCode": "Lorem",
+                "tortLimitation": "Lorem",
+                "thresholdLimitation": "Lorem"
+            },
+            "currencyPayment": {
+                "enumType": "Lorem",
+                "minimumAmount": 59,
+                "maximumAmount": -13,
+                "currencyPaymentAmount": -60,
+                "rate": 8,
+                "description": "Lorem",
+                "transactionCode": "Lorem",
+                "transactionType": "Lorem",
+                "monthsCovered": {
+                    "legacyCode": "Lorem",
+                    "description": "Lorem"
+                },
+                "accountStatement": {
+                    "periodStartDate": "Lorem",
+                    "periodEndDate": "Lorem"
+                }
+            },
+            "commercialAutoClass": "Lorem",
+            "automobile": [
+                {
+                    "modelYear": "Lorem",
+                    "personalAutoUse": "Lorem",
+                    "modelYearLegacyCode": "Lorem",
+                    "personalAutoUseLegacyCode": "Lorem",
+                    "originalPrice": "Lorem",
+                    "manufactureYear": "Lorem",
+                    "symbolCode": "Lorem",
+                    "airbagsAvailability": "Lorem",
+                    "seatbeltsAvailability": "Lorem",
+                    "absAvailability": "Lorem",
+                    "protectiveDeviceAvailability": "Lorem",
+                    "assignedRisksAutoClassLegacyCode": "Lorem",
+                    "assignedRisksAutoClass": "Lorem",
+                    "assignedRisksSecondaryClassCode": "Lorem",
+                    "engineSize": "Lorem",
+                    "fleetIndicator": "Lorem",
+                    "ownershipStatus": "Lorem",
+                    "ownershipUsage": "Lorem",
+                    "numberOfOperatorsAssignedToAuto": "Lorem",
+                    "milesCommuting": "Lorem",
+                    "daysCommuting": "Lorem",
+                    "estimatedAnnualMileage": "Lorem",
+                    "symbolCodeBIPDLiability": "Lorem",
+                    "symbolCodeMPPIP": "Lorem",
+                    "symbolCodeCollision": "Lorem",
+                    "symbolCodeComprehensive": "Lorem",
+                    "autoTitleType": "Lorem",
+                    "customEquipmentValue": "Lorem",
+                    "priorSevereDamage": "Lorem",
+                    "drl": "Lorem",
+                    "esc": "Lorem",
+                    "forwardCollisionWarning": "Lorem",
+                    "automaticEmergencyBreaking": "Lorem",
+                    "laneDepartureWarning": "Lorem",
+                    "blindSpotDetection": "Lorem",
+                    "rearAutomaticBreaking": "Lorem",
+                    "rearviewCamera": "Lorem",
+                    "rearCrossTrafficAlert": "Lorem",
+                    "commercialAutoUse": "Lorem",
+                    "commercialAutoUseLegacyCode": "Lorem"
+                }
+            ],
+            "commercialAutoClassLegacyCode": "Lorem"
+        },
+        "businessClassification": {
+            "industryCode": "Lorem",
+            "description": "Lorem",
+            "enumType": "Lorem",
+            "assignedRisksRateClassCode": "Lorem"
+        },
+        "assignedRisksSurcharges": [
+            {
+                "percentOfSurcharge": "Lorem",
+                "surchargeDescription": "Lorem",
+                "typeOfSurcharge": "Lorem"
+            }
+        ],
+        "mgaIndicator": "Lorem",
+        "paperlessPayment": "Lorem",
+        "numberOfOperatorsOnPolicy": "Lorem",
+        "numberOfAutos": "Lorem"
+    },
+    "claim": {
+        "Object_ID": "Lorem",
+        "claimFolder": {
+            "enumType": "Lorem",
+            "description": "Lorem",
+            "Object_ID": "Lorem",
+            "accidentDate": "Lorem",
+            "claimNumber": "Lorem",
+            "claimComponent": {
+                "claimOffer": [
+                    {
+                        "description": "Lorem",
+                        "settlementMethod": "Lorem",
+                        "payments": [
+                            {
+                                "enumType": "Lorem",
+                                "paymentAmount": -54,
+                                "Object_ID": "Lorem"
+                            }
+                        ],
+                        "Object_ID": "Lorem",
+                        "lossSettlementIndicator": {
+                            "legacyCode": "Lorem",
+                            "category": "Lorem"
+                        }
+                    }
+                ],
+                "enumType": "Lorem",
+                "description": "Lorem",
+                "claimIdentifier": "Lorem",
+                "Object_ID": "Lorem",
+                "causeOfLoss": {
+                    "legacyCode": "Lorem",
+                    "category": "Lorem",
+                    "causeOfLossName": "Lorem"
+                },
+                "currencyPayment": {
+                    "Object_ID": "Lorem",
+                    "enumType": "Lorem",
+                    "minimumAmount": 3,
+                    "maximumAmount": -42,
+                    "currencyPaymentAmount": -64,
+                    "rate": 10,
+                    "outstandingClaimsCount": -2,
+                    "paidClaimsCount": 62,
+                    "claimsCount": "Lorem",
+                    "transactionCode": "Lorem",
+                    "transactionType": "Lorem",
+                    "accountStatement": {
+                        "periodStartDate": "Lorem",
+                        "periodEndDate": "Lorem",
+                        "Object_ID": "Lorem"
+                    }
+                }
+            }
+        }
+    },
+    "errorFlag": true,
+    "errorList": [
+        "Lorem"
+    ],
+    "validToDate": "Lorem",
+    "validFromDate": "Lorem",
+    "effectiveToDate": "Lorem",
+    "effectiveFromDate": "Lorem",
+    "populationInfoID": 7,
+    "periodStartDate": "Lorem",
+    "intrastateInterstateBasis": "Lorem",
+    "reinsuranceCededStatus": "Lorem",
+    "stateReinsuranceFacilityFlag": "Lorem",
+    "limitedCodingLossTransactionCode": "Lorem"
+}

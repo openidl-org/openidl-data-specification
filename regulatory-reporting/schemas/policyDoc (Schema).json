@@ -1,0 +1,1593 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "plcyDc_ID",
+    "type": "object",
+    "title": "Policy_doc",
+    "additionalProperties": false,
+    "properties": {
+        "policy": {
+            "id": "plcy_ID",
+            "type": "object",
+            "properties": {
+                "poolAffiliationGroup": {
+                    "id": "plAffltnGrp_ID",
+                    "type": "object",
+                    "properties": {
+                        "legacyCode": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "perilCategories": {
+                    "id": "prlCtgry_ID",
+                    "type": "array",
+                    "additionalItems": true,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "enumType": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "majorPeril": {
+                                "type": "string"
+                            },
+                            "windHailCoverageStatus": {
+                                "type": "string"
+                            },
+                            "awayFromPremisesTheftProtectionType": {
+                                "type": "string"
+                            },
+                            "deductibles": {
+                                "$ref": "#/definitions/deductibles"
+                            },
+                            "limits": {
+                                "$ref": "#/definitions/limits"
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "locations": {
+                    "id": "lctn_ID",
+                    "type": "array",
+                    "additionalItems": true,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "address": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "deductibles": {
+                    "$ref": "#/definitions/deductibles"
+                },
+                "limits": {
+                    "$ref": "#/definitions/limits"
+                },
+                "policyForm": {
+                    "$ref": "#/definitions/policyForm"
+                },
+                "lineOfInsurance": {
+                    "type": "object",
+                    "properties": {
+                        "legacyCode": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "$ref": "#/definitions/requiredStringSpec"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "description"
+                    ]
+                },
+                "personalPolicy": {
+                    "type": "object",
+                    "properties": {
+                        "stateExceptions": {
+                            "id": "sttExcptns_ID",
+                            "type": "array",
+                            "additionalItems": true,
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "enumType": {
+                                        "type": "string"
+                                    },
+                                    "legacyCode": {
+                                        "type": "string"
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "policyNumber": {
+                            "type": "string"
+                        },
+                        "policyInceptionDate": {
+                            "type": "string"
+                        },
+                        "reasonForNonRenewalCode": {
+                            "type": "string"
+                        },
+                        "earnedExposureAmount": {
+                            "type": "number"
+                        },
+                        "consentToRate": {
+                            "type": "string",
+                            "enum": [
+                                ""
+                            ]
+                        },
+                        "cancelEffectiveDate": {
+                            "type": "string"
+                        },
+                        "cancelEffectiveStatus": {
+                            "type": "string"
+                        },
+                        "cancelExperationDate": {
+                            "type": "string"
+                        },
+                        "cancelExperationStatus": {
+                            "type": "string"
+                        },
+                        "policyStatus": {
+                            "type": "string"
+                        },
+                        "policyEffectiveDate": {
+                            "type": "string"
+                        },
+                        "policyEffectiveStatus": {
+                            "type": "string"
+                        },
+                        "policyExperationDate": {
+                            "type": "string"
+                        },
+                        "policyExperationStatus": {
+                            "type": "string"
+                        },
+                        "programEnhancement": {
+                            "type": "object",
+                            "properties": {
+                                "indicator": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "additionalAutoIndicator": {
+                            "type": "string"
+                        },
+                        "additionalAutoIndicatorLegacyCode": {
+                            "type": "string"
+                        },
+                        "separateOrEndorsement": {
+                            "type": "string"
+                        },
+                        "SeparateOrEndorsementLegacyCode": {
+                            "type": "string"
+                        },
+                        "passiveRestraintDiscount": {
+                            "type": "string"
+                        },
+                        "passiveRestraintDiscountCode": {
+                            "type": "string"
+                        },
+                        "absDiscount": {
+                            "type": "string"
+                        },
+                        "absDiscountCode": {
+                            "type": "string"
+                        },
+                        "protectiveDeviceDiscount": {
+                            "type": "string"
+                        },
+                        "protectiveDeviceDiscountCode": {
+                            "type": "string"
+                        },
+                        "accidentPreventionCreditCode": {
+                            "type": "string"
+                        },
+                        "accidentPreventionCredit": {
+                            "type": "string"
+                        },
+                        "additionalAutoRiskDiscount": {
+                            "type": "string"
+                        },
+                        "additionalAutoRisk": {
+                            "type": "string"
+                        },
+                        "fiftyFiveAndOverDiscount": {
+                            "type": "string"
+                        },
+                        "homeownershipDiscount": {
+                            "type": "string"
+                        },
+                        "multiLineDiscount": {
+                            "type": "string"
+                        },
+                        "paidInFullDiscount": {
+                            "type": "string"
+                        },
+                        "renewalDiscount": {
+                            "type": "string"
+                        },
+                        "reoccuringCustomerDiscount": {
+                            "type": "string"
+                        },
+                        "renewalIndicator": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "interestedParty": {
+                    "type": "object",
+                    "properties": {
+                        "regionalOfficeCode": {
+                            "type": "string"
+                        },
+                        "fullName": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "operator": {
+                    "type": "object",
+                    "properties": {
+                        "communicationPreferences": {
+                            "id": "cmmnctnPrfrnc_ID",
+                            "type": "array",
+                            "additionalItems": true,
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "communicationTypes": {
+                                        "id": "cmmnctnTyp_ID",
+                                        "type": "array",
+                                        "additionalItems": true,
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "postalAddresses": {
+                                                    "type": "array",
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "city": {
+                                                                "type": "string"
+                                                            },
+                                                            "region": {
+                                                                "type": "string"
+                                                            },
+                                                            "countyName": {
+                                                                "type": "string"
+                                                            },
+                                                            "addressLines": {
+                                                                "type": "string"
+                                                            },
+                                                            "postalCode": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "additionalProperties": false
+                                                    }
+                                                }
+                                            },
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "enumType": {
+                                        "type": "string"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "enumType": {
+                            "type": "string"
+                        },
+                        "fullName": {
+                            "type": "string"
+                        },
+                        "drivingPenaltyPoints": {
+                            "type": "string"
+                        },
+                        "drivingPenaltyPointsLegacyCode": {
+                            "type": "string"
+                        },
+                        "goodStudentDiscount": {
+                            "type": "string"
+                        },
+                        "accidentPreventionClassLegacyCode": {
+                            "type": "string"
+                        },
+                        "accidentPreventionClass": {
+                            "type": "string"
+                        },
+                        "dateLicensed": {
+                            "type": "string"
+                        },
+                        "numberOfMonthsSinceLastTrafficOffense": {
+                            "type": "string"
+                        },
+                        "numberOfChargeableAtFaultAccidents": {
+                            "type": "string"
+                        },
+                        "numberOfMonthsSinceLastChargeableAtFaultAccident": {
+                            "type": "string"
+                        },
+                        "dateFirstInsuredWithCompany": {
+                            "type": "string"
+                        },
+                        "numberOfChargeableAtFaultAccidentsBI": {
+                            "type": "string"
+                        },
+                        "numberOfChargeableAtFaultAccidentsPD": {
+                            "type": "string"
+                        },
+                        "numberOfAccidentsForgiven": {
+                            "type": "string"
+                        },
+                        "numberOfComprehensiveClaims": {
+                            "type": "string"
+                        },
+                        "principalOperatorFlag": {
+                            "type": "string"
+                        },
+                        "tncDriver": {
+                            "type": "string"
+                        },
+                        "sr22CertificateCertificateFlag": {
+                            "type": "string"
+                        },
+                        "numberOfMinorTrafficOffenses": {
+                            "type": "string"
+                        },
+                        "numberOfSignificantTrafficOffenses": {
+                            "type": "string"
+                        },
+                        "dateOfBirth": {
+                            "type": "string"
+                        },
+                        "numberOfMonthsSinceLastComprehensiveClaim": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "insured": {
+                    "type": "object",
+                    "properties": {
+                        "communicationPreferences": {
+                            "id": "cmmnctnPrfrnc_ID",
+                            "type": "array",
+                            "additionalItems": true,
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "communicationTypes": {
+                                        "id": "cmmnctnTyp_ID",
+                                        "type": "array",
+                                        "additionalItems": true,
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "postalAddresses": {
+                                                    "type": "array",
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "city": {
+                                                                "type": "string"
+                                                            },
+                                                            "region": {
+                                                                "type": "string"
+                                                            },
+                                                            "countyName": {
+                                                                "type": "string"
+                                                            },
+                                                            "addressLines": {
+                                                                "type": "string"
+                                                            },
+                                                            "postalCode": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "additionalProperties": false
+                                                    }
+                                                }
+                                            },
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "enumType": {
+                                        "type": "string"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "enumType": {
+                            "type": "string"
+                        },
+                        "fullName": {
+                            "type": "string"
+                        },
+                        "primaryHealthPlan": {
+                            "type": "string"
+                        },
+                        "paperlessPolicyDocuments": {
+                            "type": "string"
+                        },
+                        "yearsInsuredWithCurrentInsuranceCompany": {
+                            "type": "string"
+                        },
+                        "yearsInsuredWithPriorInsuranceCompany": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "commercialPolicy": {
+                    "type": "object",
+                    "properties": {
+                        "policyNumber": {
+                            "type": "string"
+                        },
+                        "programEnhancement": {
+                            "type": "object",
+                            "properties": {
+                                "indicator": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "additionalAutoIndicator": {
+                            "type": "string"
+                        },
+                        "additionalAutoIndicatorLegacyCode": {
+                            "type": "string"
+                        },
+                        "separateOrEndorsement": {
+                            "type": "string"
+                        },
+                        "SeparateOrEndorsementLegacyCode": {
+                            "type": "string"
+                        },
+                        "passiveRestraintDiscount": {
+                            "type": "string"
+                        },
+                        "passiveRestraintDiscountCode": {
+                            "type": "string"
+                        },
+                        "absDiscount": {
+                            "type": "string"
+                        },
+                        "absDiscountCode": {
+                            "type": "string"
+                        },
+                        "protectiveDeviceDiscount": {
+                            "type": "string"
+                        },
+                        "protectiveDeviceDiscountCode": {
+                            "type": "string"
+                        },
+                        "accidentPreventionCredit": {
+                            "type": "string"
+                        },
+                        "accidentPreventionCreditCode": {
+                            "type": "string"
+                        },
+                        "additionalAutoRisk": {
+                            "type": "string"
+                        },
+                        "additionalAutoRiskDiscount": {
+                            "type": "string"
+                        },
+                        "fiftyFiveAndOverDiscount": {
+                            "type": "string"
+                        },
+                        "policyExperationDate": {
+                            "type": "string"
+                        },
+                        "homeownershipDiscount": {
+                            "type": "string"
+                        },
+                        "multiLineDiscount": {
+                            "type": "string"
+                        },
+                        "paidInFullDiscount": {
+                            "type": "string"
+                        },
+                        "renewalDiscount": {
+                            "type": "string"
+                        },
+                        "reoccuringCustomerDiscount": {
+                            "type": "string"
+                        },
+                        "renewalIndicator": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "program": {
+                    "type": "object",
+                    "properties": {
+                        "description": {
+                            "$ref": "#/definitions/requiredStringSpec"
+                        },
+                        "legacyCode": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "description"
+                    ]
+                },
+                "numberOfEmployees": {
+                    "type": "number"
+                },
+                "company": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "$ref": "#/definitions/requiredStringSpec"
+                        },
+                        "code": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "name"
+                    ]
+                },
+                "annualStatementLineOfBusiness": {
+                    "type": "object",
+                    "properties": {
+                        "description": {
+                            "type": "string"
+                        },
+                        "code": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "catastrophe": {
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "taxID": {
+                    "type": "string"
+                },
+                "autoIdentificationNumber": {
+                    "type": "string"
+                },
+                "currencyPayment": {
+                    "$ref": "#/definitions/currencyPayment"
+                },
+                "policyStructure": {
+                    "type": "object",
+                    "properties": {
+                        "limits": {
+                            "$ref": "#/definitions/limits"
+                        },
+                        "coverages": {
+                            "id": "cvrg_ID",
+                            "type": "array",
+                            "additionalItems": true,
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "earnedExposureAmount": {
+                                        "type": "number"
+                                    },
+                                    "exposureAmount": {
+                                        "type": "number"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    },
+                                    "enumType": {
+                                        "type": "string"
+                                    },
+                                    "scheduledPersonalPropertyAgreedValueIndicator": {
+                                        "type": "string"
+                                    },
+                                    "leadPoisoningLiabilityStatus": {
+                                        "type": "string"
+                                    },
+                                    "leadPoisoningExclusionStatus": {
+                                        "type": "string"
+                                    },
+                                    "hurricaneExclusionEndorsementStatusType": {
+                                        "type": "string"
+                                    },
+                                    "wrapAroundEndorsementStatusIndicator": {
+                                        "type": "string"
+                                    },
+                                    "locations": {
+                                        "id": "lctn_ID",
+                                        "type": "array",
+                                        "additionalItems": true,
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "pitneyBowesCode": {
+                                                    "type": "string"
+                                                },
+                                                "geographicLocation": {
+                                                    "$ref": "#/definitions/geographicLocation"
+                                                }
+                                            },
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "cancelEffectiveStatus": {
+                                        "type": "string"
+                                    },
+                                    "cancelExperationStatus": {
+                                        "type": "string"
+                                    },
+                                    "cancelExperationDate": {
+                                        "type": "string"
+                                    },
+                                    "deductibles": {
+                                        "$ref": "#/definitions/deductibles"
+                                    },
+                                    "limits": {
+                                        "$ref": "#/definitions/limits"
+                                    },
+                                    "riskClassification": {
+                                        "$ref": "#/definitions/riskClassification"
+                                    },
+                                    "uimUMCode": {
+                                        "type": "string"
+                                    },
+                                    "buildingCodeEffectivenessGrade": {
+                                        "$ref": "#/definitions/buildingCodeEffectivenessGrade"
+                                    },
+                                    "policyForm": {
+                                        "$ref": "#/definitions/policyForm"
+                                    },
+                                    "currencyPayment": {
+                                        "$ref": "#/definitions/currencyPayment"
+                                    },
+                                    "stackingFlag": {
+                                        "type": "boolean"
+                                    },
+                                    "category": {
+                                        "type": "string"
+                                    },
+                                    "entryYearIntoClaimsMadeProgram": {
+                                        "type": "string"
+                                    },
+                                    "liabilityExposureIndicatorCode": {
+                                        "type": "string"
+                                    },
+                                    "liabilityExposureIndicatorDescription": {
+                                        "type": "string"
+                                    },
+                                    "typeOfCoverageDescription": {
+                                        "type": "string"
+                                    },
+                                    "typeOfCoverageCode": {
+                                        "type": "string"
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "enumType": {
+                            "type": "string"
+                        },
+                        "exposureAmount": {
+                            "type": "number"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "leadPoisoningLiabilityStatusType": {
+                            "type": "string"
+                        },
+                        "leadLiabilityExclusionStatusType": {
+                            "type": "string"
+                        },
+                        "hurricaneExclusionEndorsementStatusType": {
+                            "type": "string"
+                        },
+                        "wrapAroundEndorsementStatusIndicator": {
+                            "type": "string"
+                        },
+                        "materialItems": {
+                            "id": "objct_ID",
+                            "type": "array",
+                            "additionalItems": true,
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "physicalStructure": {
+                                        "type": "object",
+                                        "properties": {
+                                            "constructionDate": {
+                                                "type": "string"
+                                            },
+                                            "constructionType": {
+                                                "type": "string"
+                                            },
+                                            "occupationType": {
+                                                "type": "string"
+                                            },
+                                            "designStyle": {
+                                                "type": "string"
+                                            },
+                                            "roofShapeType": {
+                                                "type": "string"
+                                            },
+                                            "renovationDate": {
+                                                "type": "string"
+                                            },
+                                            "primaryResidence": {
+                                                "type": "boolean"
+                                            },
+                                            "protectionClass": {
+                                                "type": "string"
+                                            },
+                                            "enumType": {
+                                                "type": "string"
+                                            },
+                                            "inspection": {
+                                                "type": "boolean"
+                                            },
+                                            "restrictionStatus": {
+                                                "type": "string"
+                                            },
+                                            "roofCoveringCategory": {
+                                                "type": "string"
+                                            },
+                                            "leadLiabilityUnitCount": {
+                                                "type": "number"
+                                            },
+                                            "leadLiabilityInterimControlLetter": {
+                                                "type": "string"
+                                            },
+                                            "leadPoisoningExclusionStatus": {
+                                                "type": "string"
+                                            },
+                                            "leadPoisoningLiabilityStatus": {
+                                                "type": "string"
+                                            },
+                                            "secondaryLossMitigationBuildingFeatureType": {
+                                                "type": "string"
+                                            },
+                                            "windLossMitigationFeatureType": {
+                                                "type": "string"
+                                            },
+                                            "roofToWallConnectionType": {
+                                                "type": "string"
+                                            },
+                                            "roofDeckAttachmentType": {
+                                                "type": "string"
+                                            },
+                                            "secondaryWaterResistanceRoofIndicator": {
+                                                "type": "boolean"
+                                            },
+                                            "windResistanceOpeningProtection": {
+                                                "type": "string"
+                                            },
+                                            "windstormProtectiveDevice": {
+                                                "type": "string"
+                                            },
+                                            "windBorneDebrisIndicator": {
+                                                "type": "boolean"
+                                            },
+                                            "roofDeckInternalPressureDesignType": {
+                                                "type": "string"
+                                            },
+                                            "roofDeckMaximumWindSpeed": {
+                                                "type": "string"
+                                            },
+                                            "roofDeckMaterial": {
+                                                "type": "string"
+                                            },
+                                            "constructionYearBand": {
+                                                "type": "string"
+                                            },
+                                            "stormShuttersPresent": {
+                                                "type": "string"
+                                            },
+                                            "description": {
+                                                "type": "string"
+                                            },
+                                            "constructionLegacyCode": {
+                                                "type": "string"
+                                            },
+                                            "fireProtectionLegacyCode": {
+                                                "type": "string"
+                                            },
+                                            "yearOfConstructionLegacyCode": {
+                                                "type": "string"
+                                            },
+                                            "fireProtectionCategory": {
+                                                "type": "string"
+                                            },
+                                            "occupancyLegacyCode": {
+                                                "type": "string"
+                                            },
+                                            "numberOfFamiliesLegacyCode": {
+                                                "type": "string"
+                                            },
+                                            "numberOfFamiliesCategory": {
+                                                "type": "string"
+                                            },
+                                            "sprinklerSystemCode": {
+                                                "type": "string"
+                                            },
+                                            "sprinklerSystemDescription": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "locations": {
+                            "id": "lctn_ID",
+                            "type": "array",
+                            "additionalItems": true,
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "pitneyBowesCode": {
+                                        "type": "string"
+                                    },
+                                    "geographicLocation": {
+                                        "$ref": "#/definitions/geographicLocation"
+                                    },
+                                    "addressNumber": {
+                                        "type": "string"
+                                    },
+                                    "streetName": {
+                                        "type": "string"
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "deductibles": {
+                            "$ref": "#/definitions/deductibles"
+                        },
+                        "riskClassification": {
+                            "$ref": "#/definitions/riskClassification"
+                        },
+                        "buildingCodeEffectivenessGrade": {
+                            "$ref": "#/definitions/buildingCodeEffectivenessGrade"
+                        },
+                        "policyForm": {
+                            "$ref": "#/definitions/policyForm"
+                        },
+                        "currencyPayment": {
+                            "$ref": "#/definitions/currencyPayment"
+                        },
+                        "commercialAutoClass": {
+                            "type": "string"
+                        },
+                        "automobile": {
+                            "type": "array",
+                            "additionalItems": true,
+                            "uniqueItems": false,
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "modelYear": {
+                                        "type": "string"
+                                    },
+                                    "personalAutoUse": {
+                                        "type": "string"
+                                    },
+                                    "modelYearLegacyCode": {
+                                        "type": "string"
+                                    },
+                                    "personalAutoUseLegacyCode": {
+                                        "type": "string"
+                                    },
+                                    "originalPrice": {
+                                        "type": "string"
+                                    },
+                                    "manufactureYear": {
+                                        "type": "string"
+                                    },
+                                    "symbolCode": {
+                                        "type": "string"
+                                    },
+                                    "airbagsAvailability": {
+                                        "type": "string"
+                                    },
+                                    "seatbeltsAvailability": {
+                                        "type": "string"
+                                    },
+                                    "absAvailability": {
+                                        "type": "string"
+                                    },
+                                    "protectiveDeviceAvailability": {
+                                        "type": "string"
+                                    },
+                                    "assignedRisksAutoClassLegacyCode": {
+                                        "type": "string"
+                                    },
+                                    "assignedRisksAutoClass": {
+                                        "type": "string"
+                                    },
+                                    "assignedRisksSecondaryClassCode": {
+                                        "type": "string"
+                                    },
+                                    "engineSize": {
+                                        "type": "string"
+                                    },
+                                    "fleetIndicator": {
+                                        "type": "string"
+                                    },
+                                    "ownershipStatus": {
+                                        "type": "string"
+                                    },
+                                    "ownershipUsage": {
+                                        "type": "string"
+                                    },
+                                    "numberOfOperatorsAssignedToAuto": {
+                                        "type": "string"
+                                    },
+                                    "milesCommuting": {
+                                        "type": "string"
+                                    },
+                                    "daysCommuting": {
+                                        "type": "string"
+                                    },
+                                    "estimatedAnnualMileage": {
+                                        "type": "string"
+                                    },
+                                    "symbolCodeBIPDLiability": {
+                                        "type": "string"
+                                    },
+                                    "symbolCodeMPPIP": {
+                                        "type": "string"
+                                    },
+                                    "symbolCodeCollision": {
+                                        "type": "string"
+                                    },
+                                    "symbolCodeComprehensive": {
+                                        "type": "string"
+                                    },
+                                    "autoTitleType": {
+                                        "type": "string"
+                                    },
+                                    "customEquipmentValue": {
+                                        "type": "string"
+                                    },
+                                    "priorSevereDamage": {
+                                        "type": "string"
+                                    },
+                                    "drl": {
+                                        "type": "string"
+                                    },
+                                    "esc": {
+                                        "type": "string"
+                                    },
+                                    "forwardCollisionWarning": {
+                                        "type": "string"
+                                    },
+                                    "automaticEmergencyBreaking": {
+                                        "type": "string"
+                                    },
+                                    "laneDepartureWarning": {
+                                        "type": "string"
+                                    },
+                                    "blindSpotDetection": {
+                                        "type": "string"
+                                    },
+                                    "rearAutomaticBreaking": {
+                                        "type": "string"
+                                    },
+                                    "rearviewCamera": {
+                                        "type": "string"
+                                    },
+                                    "rearCrossTrafficAlert": {
+                                        "type": "string"
+                                    },
+                                    "commercialAutoUse": {
+                                        "type": "string"
+                                    },
+                                    "commercialAutoUseLegacyCode": {
+                                        "type": "string"
+                                    }
+                                },
+                                "additionalProperties": false
+                            }
+                        },
+                        "commercialAutoClassLegacyCode": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "businessClassification": {
+                    "type": "object",
+                    "properties": {
+                        "industryCode": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "enumType": {
+                            "type": "string"
+                        },
+                        "assignedRisksRateClassCode": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "assignedRisksSurcharges": {
+                    "$ref": "#/definitions/assignedRisksSurcharges"
+                },
+                "mgaIndicator": {
+                    "type": "string"
+                },
+                "paperlessPayment": {
+                    "type": "string"
+                },
+                "numberOfOperatorsOnPolicy": {
+                    "type": "string"
+                },
+                "numberOfAutos": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "claim": {
+            "id": "clm_ID",
+            "type": "object",
+            "properties": {
+                "Object_ID": {
+                    "type": "string"
+                },
+                "claimFolder": {
+                    "type": "object",
+                    "properties": {
+                        "enumType": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "Object_ID": {
+                            "type": "string"
+                        },
+                        "accidentDate": {
+                            "type": "string"
+                        },
+                        "claimNumber": {
+                            "type": "string"
+                        },
+                        "claimComponent": {
+                            "type": "object",
+                            "properties": {
+                                "claimOffer": {
+                                    "id": "clmOffr_ID",
+                                    "type": "array",
+                                    "additionalItems": true,
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "description": {
+                                                "type": "string"
+                                            },
+                                            "settlementMethod": {
+                                                "type": "string"
+                                            },
+                                            "payments": {
+                                                "type": "array",
+                                                "additionalItems": true,
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "enumType": {
+                                                            "type": "string"
+                                                        },
+                                                        "paymentAmount": {
+                                                            "type": "number"
+                                                        },
+                                                        "Object_ID": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "additionalProperties": false
+                                                }
+                                            },
+                                            "Object_ID": {
+                                                "type": "string"
+                                            },
+                                            "lossSettlementIndicator": {
+                                                "$ref": "#/definitions/lossSettlementIndicator"
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
+                                },
+                                "enumType": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "claimIdentifier": {
+                                    "type": "string"
+                                },
+                                "Object_ID": {
+                                    "type": "string"
+                                },
+                                "causeOfLoss": {
+                                    "type": "object",
+                                    "properties": {
+                                        "legacyCode": {
+                                            "type": "string"
+                                        },
+                                        "category": {
+                                            "type": "string"
+                                        },
+                                        "causeOfLossName": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                "currencyPayment": {
+                                    "type": "object",
+                                    "properties": {
+                                        "Object_ID": {
+                                            "type": "string"
+                                        },
+                                        "enumType": {
+                                            "type": "string"
+                                        },
+                                        "minimumAmount": {
+                                            "type": "number"
+                                        },
+                                        "maximumAmount": {
+                                            "type": "number"
+                                        },
+                                        "currencyPaymentAmount": {
+                                            "type": "number"
+                                        },
+                                        "rate": {
+                                            "type": "number"
+                                        },
+                                        "outstandingClaimsCount": {
+                                            "type": "number"
+                                        },
+                                        "paidClaimsCount": {
+                                            "type": "number"
+                                        },
+                                        "claimsCount": {
+                                            "type": "string"
+                                        },
+                                        "transactionCode": {
+                                            "type": "string"
+                                        },
+                                        "transactionType": {
+                                            "type": "string"
+                                        },
+                                        "accountStatement": {
+                                            "type": "object",
+                                            "properties": {
+                                                "periodStartDate": {
+                                                    "type": "string"
+                                                },
+                                                "periodEndDate": {
+                                                    "type": "string"
+                                                },
+                                                "Object_ID": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "errorFlag": {
+            "type": "boolean"
+        },
+        "errorList": {
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "type": "string"
+            }
+        },
+        "validToDate": {
+            "type": "string"
+        },
+        "validFromDate": {
+            "type": "string"
+        },
+        "effectiveToDate": {
+            "type": "string"
+        },
+        "effectiveFromDate": {
+            "type": "string"
+        },
+        "populationInfoID": {
+            "type": "number"
+        },
+        "periodStartDate": {
+            "type": "string"
+        },
+        "intrastateInterstateBasis": {
+            "type": "string"
+        },
+        "reinsuranceCededStatus": {
+            "type": "string"
+        },
+        "stateReinsuranceFacilityFlag": {
+            "type": "string"
+        },
+        "limitedCodingLossTransactionCode": {
+            "type": "string"
+        }
+    },
+    "definitions": {
+        "deductibles": {
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "deductibleAmount": {
+                        "type": "number"
+                    },
+                    "legacyCode": {
+                        "type": "string"
+                    },
+                    "deductibleType": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "typeLegacyCode": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "limits": {
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "limitAmount": {
+                        "type": "number"
+                    },
+                    "legacyCode": {
+                        "type": "string"
+                    },
+                    "limitType": {
+                        "type": "string"
+                    },
+                    "category": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "minimumAmount": {
+                        "type": "number"
+                    },
+                    "maximumAmount": {
+                        "type": "number"
+                    },
+                    "rate": {
+                        "type": "number"
+                    },
+                    "subcategory": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "monthsCovered": {
+            "type": "object",
+            "properties": {
+                "legacyCode": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "lossSettlementIndicator": {
+            "id": "lssSttlmntIndctr_ID",
+            "type": "object",
+            "properties": {
+                "legacyCode": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "riskClassification": {
+            "id": "rskClssfctn_ID",
+            "type": "object",
+            "properties": {
+                "lossSettlementIndicator": {
+                    "$ref": "#/definitions/lossSettlementIndicator"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "settlement": {
+                    "type": "string"
+                },
+                "legacyCode": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "buildingCodeEffectivenessGrade": {
+            "type": "object",
+            "properties": {
+                "legacyCode": {
+                    "type": "string"
+                },
+                "standardsClassification": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "geographicLocation": {
+            "type": "object",
+            "properties": {
+                "countyLegacyCode": {
+                    "type": "string"
+                },
+                "countyName": {
+                    "type": "string"
+                },
+                "postalCode": {
+                    "type": "string"
+                },
+                "stateLegacyCode": {
+                    "type": "string"
+                },
+                "stateName": {
+                    "$ref": "#/definitions/requiredStringSpec"
+                },
+                "stateAbbreviation": {
+                    "type": "string"
+                },
+                "optionalZipIndicator": {
+                    "type": "string"
+                },
+                "territory": {
+                    "type": "string"
+                },
+                "territoryLegacyCode": {
+                    "type": "string"
+                },
+                "terminalZone": {
+                    "type": "string"
+                },
+                "terminalZoneLegacyCode": {
+                    "type": "string"
+                },
+                "accidentState": {
+                    "type": "string"
+                },
+                "accidentZip": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "areaIndicatorDescription": {
+                    "type": "string"
+                },
+                "areaIndicatorCode": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "stateName"
+            ]
+        },
+        "policyForm": {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "versionNumber": {
+                    "type": "string"
+                },
+                "legacyCode": {
+                    "type": "string"
+                },
+                "policyFormEdition": {
+                    "type": "string"
+                },
+                "businessInterruptionFlag": {
+                    "type": "boolean"
+                },
+                "physicalDamageRequirement": {
+                    "type": "boolean"
+                },
+                "viralExclusion": {
+                    "type": "boolean"
+                },
+                "terrorismIndicator": {
+                    "type": "string"
+                },
+                "terrorismIndicatorLegacyCode": {
+                    "type": "string"
+                },
+                "tortLimitation": {
+                    "type": "string"
+                },
+                "thresholdLimitation": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "requiredStringSpec": {
+            "type": "string",
+            "minLength": 1
+        },
+        "currencyPayment": {
+            "type": "object",
+            "properties": {
+                "enumType": {
+                    "type": "string"
+                },
+                "minimumAmount": {
+                    "type": "number"
+                },
+                "maximumAmount": {
+                    "type": "number"
+                },
+                "currencyPaymentAmount": {
+                    "type": "number"
+                },
+                "rate": {
+                    "type": "number"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "transactionCode": {
+                    "type": "string"
+                },
+                "transactionType": {
+                    "$ref": "#/definitions/requiredStringSpec"
+                },
+                "monthsCovered": {
+                    "$ref": "#/definitions/monthsCovered"
+                },
+                "accountStatement": {
+                    "type": "object",
+                    "properties": {
+                        "periodStartDate": {
+                            "$ref": "#/definitions/requiredStringSpec"
+                        },
+                        "periodEndDate": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "periodStartDate"
+                    ]
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "transactionType"
+            ]
+        },
+        "assignedRisksSurcharges": {
+            "type": "array",
+            "additionalItems": true,
+            "uniqueItems": false,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "percentOfSurcharge": {
+                        "type": "string"
+                    },
+                    "surchargeDescription": {
+                        "type": "string"
+                    },
+                    "typeOfSurcharge": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": [
+        "requiredStringSpec"
+    ]
+}
