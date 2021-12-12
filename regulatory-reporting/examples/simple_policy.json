@@ -1,0 +1,60 @@
+{
+    "company": {
+        "name": "ins co",
+        "notes": "blah blah",
+        "policies": [
+            {
+                "state": {
+                    "name": "New Jersey",
+                    "abbreviation": "NJ"
+                },
+                "productLine": {
+                    "name": "Personal Auto",
+                    "code": "PA",
+                    "productSuite": "Personal"
+                },
+                "subline": {
+                    "name": "??",
+                    "code": "??"
+                },
+                "insurableObjects": [
+                    {
+                        "insuranbleObjectType": {
+                            "name": "Auto",
+                            "code": "AUO",
+                            "attributes": [
+                                {
+                                    "id": "vin",
+                                    "name": "vin",
+                                    "functionalType": "alphanumeric",
+                                    "unit": ""
+                                },
+                                {
+                                    "id": "year",
+                                    "name": "year",
+                                    "functionalType": "numeric",
+                                    "unit": "year"
+                                }
+                            ]
+                        },
+                        "values": [
+                            {
+                                "attributeId": "vin",
+                                "value": "xyz123..."
+                            },
+                            {
+                                "attributeId": "year",
+                                "value": "2020"
+                            }
+                        ]
+                    }
+                ],
+                "events": [
+                    {
+                        "accountingYear": "2021"
+                    }
+                ]
+            }
+        ]
+    }
+}
