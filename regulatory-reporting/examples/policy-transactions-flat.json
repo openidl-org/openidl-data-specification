@@ -1,0 +1,36 @@
+{
+    "transactions": [
+        {
+            "policyNumber": "12345",
+            "lineOfBusiness": "Auto",
+            "subLineCode": "Personal",
+            "transactionType": "premium",
+            "transactionCode": "1",
+            "accountingYear": 2020,
+            "deductibleAmount": 500,
+            "premiumDetail": {
+                "premiumAmount": 100
+            },
+            "stateCode": "01",
+            "coverageCode": "02",
+            "exposureAmount": 10000
+        },
+        {
+            "policyNumber": "12345",
+            "lineOfBusiness": "Auto",
+            "subLineCode": "Personal",
+            "transactionType": "claim",
+            "transactionCode": 2,
+            "accountingYear": 2020,
+            "deductibleAmount": 500,
+            "claimDetail": {
+                "lossAmount": 50,
+                "claimCount": 2,
+                "accidentDateYear": 2019
+            },
+            "stateCode": "01",
+            "coverageCode": "02",
+            "exposureAmount": 10000
+        }
+    ]
+}

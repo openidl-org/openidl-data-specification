@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "PersonalAutoStatsMessageID",
+    "type": "object",
+    "title": "StatsMessage",
+    "additionalProperties": false,
+    "properties": {
+        "StateCode": {
+            "type": "string",
+            "description": "The state in which this transaction is reported."
+        },
+        "CoverageCode": {
+            "type": "string",
+            "description": "The Coverage Code for the "
+        }
+    }
+}

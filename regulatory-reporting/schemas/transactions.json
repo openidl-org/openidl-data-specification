@@ -1,0 +1,140 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "transactions": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "policyNumber": {
+                            "type": "string"
+                        },
+                        "lineOfBusiness": {
+                            "type": "string"
+                        },
+                        "subLineCode": {
+                            "type": "string"
+                        },
+                        "transactionType": {
+                            "type": "string"
+                        },
+                        "transactionCode": {
+                            "type": "string"
+                        },
+                        "accountingYear": {
+                            "type": "integer"
+                        },
+                        "deductibleAmount": {
+                            "type": "integer"
+                        },
+                        "premiumDetail": {
+                            "type": "object",
+                            "properties": {
+                                "premiumAmount": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "premiumAmount"
+                            ]
+                        },
+                        "stateCode": {
+                            "type": "string"
+                        },
+                        "coverageCode": {
+                            "type": "string"
+                        },
+                        "exposureAmount": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "policyNumber",
+                        "lineOfBusiness",
+                        "subLineCode",
+                        "transactionType",
+                        "transactionCode",
+                        "accountingYear",
+                        "deductibleAmount",
+                        "premiumDetail",
+                        "stateCode",
+                        "coverageCode",
+                        "exposureAmount"
+                    ]
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "policyNumber": {
+                            "type": "string"
+                        },
+                        "lineOfBusiness": {
+                            "type": "string"
+                        },
+                        "subLineCode": {
+                            "type": "string"
+                        },
+                        "transactionType": {
+                            "type": "string"
+                        },
+                        "transactionCode": {
+                            "type": "integer"
+                        },
+                        "accountingYear": {
+                            "type": "integer"
+                        },
+                        "deductibleAmount": {
+                            "type": "integer"
+                        },
+                        "claimDetail": {
+                            "type": "object",
+                            "properties": {
+                                "lossAmount": {
+                                    "type": "integer"
+                                },
+                                "claimCount": {
+                                    "type": "integer"
+                                },
+                                "accidentDateYear": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "lossAmount",
+                                "claimCount",
+                                "accidentDateYear"
+                            ]
+                        },
+                        "stateCode": {
+                            "type": "string"
+                        },
+                        "coverageCode": {
+                            "type": "string"
+                        },
+                        "exposureAmount": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "policyNumber",
+                        "lineOfBusiness",
+                        "subLineCode",
+                        "transactionType",
+                        "transactionCode",
+                        "accountingYear",
+                        "deductibleAmount",
+                        "claimDetail",
+                        "stateCode",
+                        "coverageCode",
+                        "exposureAmount"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": [
+        "transactions"
+    ]
+}
