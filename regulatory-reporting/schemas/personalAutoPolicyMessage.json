@@ -1,0 +1,268 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "PersonalAutoPolicyMessage",
+    "type": "object",
+    "title": "Personal Auto Policy Message",
+    "additionalProperties": false,
+    "properties": {
+        "Policy": {
+            "type": "object",
+            "description": "policy level elements",
+            "properties": {
+                "RecordLOB": {
+                    "type": "string",
+                    "description": ""
+                },
+                "InsurerNAIC": {
+                    "type": "string",
+                    "description": ""
+                },
+                "AnnualStatementLine": {
+                    "type": "string",
+                    "description": ""
+                },
+                "Subline": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Personal",
+                        "Commercial"
+                    ]
+                },
+                "PolicyNumber": {
+                    "type": "string",
+                    "description": ""
+                },
+                "PolicyEffectiveDate": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "Effective Date of the Policy"
+                },
+                "PolicyExpirationDate": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "Effective Date of the Policy"
+                },
+                "VoluntaryResidual": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Voluntary",
+                        "Residual"
+                    ]
+                },
+                "PolicyAddress1": {
+                    "type": "string",
+                    "description": ""
+                },
+                "PolicyAddress2": {
+                    "type": "string",
+                    "description": ""
+                },
+                "PolicyState": {
+                    "type": "string",
+                    "description": ""
+                },
+                "PolicyZip5": {
+                    "type": "string",
+                    "description": "",
+                    "pattern": "^\\d{5}$"
+                },
+                "PolicyZip4": {
+                    "type": "string",
+                    "description": "",
+                    "pattern": "^\\d{4}$"
+                },
+                "CreditScored": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                }
+            }
+        },
+        "Vehicle": {
+            "type": "object",
+            "description": "vehicle level elements",
+            "properties": {
+                "PrimaryDriverGender": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Male",
+                        "Female"
+                    ]
+                },
+                "LicenseNumber": {
+                    "type": "string",
+                    "description": ""
+                },
+                "LicenseState": {
+                    "type": "string",
+                    "description": ""
+                },
+                "AgeLicenseFirstIssued": {
+                    "type": "number",
+                    "description": ""
+                },
+                "DriverBirthdate": {
+                    "type": "string",
+                    "format": "date",
+                    "description": ""
+                },
+                "PrimaryDriverAge": {
+                    "type": "number",
+                    "description": ""
+                },
+                "PrimaryDriverGoodStudentDiscount": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                "VIN": {
+                    "type": "number",
+                    "description": ""
+                },
+                "GarageZip5": {
+                    "type": "string",
+                    "description": "",
+                    "pattern": "^\\d{5}$"
+                },
+                "GarageZip4": {
+                    "type": "string",
+                    "description": "",
+                    "pattern": "^\\d{4}$"
+                },
+                "Make": {
+                    "type": "string",
+                    "description": ""
+                },
+                "Model": {
+                    "type": "string",
+                    "description": ""
+                },
+                "Trim": {
+                    "type": "string",
+                    "description": ""
+                },
+                "Symbol": {
+                    "type": "string",
+                    "description": ""
+                },
+                "Year": {
+                    "type": "string",
+                    "description": ""
+                },
+                "Use": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Peronal",
+                        "Work",
+                        "Delivery"
+                    ]
+                },
+                "PerCommuteMiles": {
+                    "type": "number",
+                    "description": ""
+                },
+                "AnnualMiles": {
+                    "type": "string",
+                    "description": ""
+                },
+                "AntilockBrakes": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                "SafetyRestraintDevice": {
+                    "type": "string",
+                    "description": ""
+                },
+                "Customizations": {
+                    "type": "string",
+                    "description": ""
+                },
+                "FuelType": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Gas",
+                        "e85",
+                        "LNG",
+                        "Diesel",
+                        "Electric",
+                        "Hybrid",
+                        "Hydrogen",
+                        "Experimental"
+                    ]
+                },
+                "Telematics": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                "AntitheftDevice": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Full",
+                        "Partial"
+                    ]
+                }
+            }
+        },
+        "Coverage": {
+            "type": "object",
+            "description": "coverage level elements",
+            "properties": {
+                "CoverageType": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "BI",
+                        "PD",
+                        "CSL",
+                        "Comprehensive",
+                        "Collision",
+                        "UM BI",
+                        "UM PD",
+                        "UM CSL",
+                        "Med Pay/Med Expense"
+                    ]
+                },
+                "EachPersonLimit": {
+                    "type": "number",
+                    "description": ""
+                },
+                "AllPersonsLimit": {
+                    "type": "number",
+                    "description": ""
+                },
+                "Limit": {
+                    "type": "number",
+                    "description": ""
+                },
+                "Deductible": {
+                    "type": "number",
+                    "description": ""
+                },
+                "Premium": {
+                    "type": "number",
+                    "description": ""
+                }
+            }
+        }
+    }
+}

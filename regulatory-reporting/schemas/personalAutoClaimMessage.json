@@ -1,0 +1,158 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "PersonalAutoClaimMessage",
+    "type": "object",
+    "title": "Personal Auto Claim Message",
+    "additionalProperties": false,
+    "properties": {
+        "Policy": {
+            "type": "object",
+            "description": "claim level elements",
+            "properties": {
+                "ClaimIdentifier": {
+                    "type": "string",
+                    "description": ""
+                },
+                "PolicyNumber": {
+                    "type": "string",
+                    "description": ""
+                },
+                "PolicyEffectiveDate": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "Effective Date of the Policy"
+                },
+                "DriverLicenseNumber": {
+                    "type": "string",
+                    "description": "Effective Date of the Policy"
+                }
+            }
+        },
+        "Vehicle": {
+            "type": "object",
+            "description": "vehicle level elements",
+            "properties": {
+                "VIN": {
+                    "type": "number",
+                    "description": ""
+                }
+            }
+        },
+        "ClaimActivity": {
+            "type": "object",
+            "description": "claim level elements",
+            "properties": {
+                "ClaimNumber": {
+                    "type": "string",
+                    "description": ""
+                },
+                "AccidentDate": {
+                    "type": "string",
+                    "description": "",
+                    "format": "date"
+                },
+                "CauseOfLoss": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Flood",
+                        "Hurricane",
+                        "Hail Storm",
+                        "Catastrophe",
+                        "Auto Accident"
+                    ]
+                },
+                "CatastropheIdentifier": {
+                    "type": "string",
+                    "description": ""
+                },
+                "ClaimLocationZip": {
+                    "type": "string",
+                    "description": "",
+                    "pattern": "^\\d{5}$"
+                },
+                "FatalityIndicator": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                "AtFaultIndicator": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                "ValidClaim": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                "Approved": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                "ClaimStatus": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Closed",
+                        "Other"
+                    ]
+                },
+                "SubrogationLoss": {
+                    "type": "number",
+                    "description": ""
+                },
+                "SubrogationLAE": {
+                    "type": "number",
+                    "description": ""
+                },
+                "ClaimPaid": {
+                    "type": "string",
+                    "description": "",
+                    "enum": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                "ClaimCloseDate": {
+                    "type": "string",
+                    "description": "",
+                    "format": "date"
+                },
+                "AccidentStreet": {
+                    "type": "string",
+                    "description": ""
+                },
+                "AccidentCity": {
+                    "type": "string",
+                    "description": ""
+                },
+                "AccidentState": {
+                    "type": "string",
+                    "description": ""
+                },
+                "AccidentZip": {
+                    "type": "string",
+                    "description": ""
+                },
+                "AccidentLatLong": {
+                    "type": "string",
+                    "description": ""
+                }
+            }
+        }
+    }
+}

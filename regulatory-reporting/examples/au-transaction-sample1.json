@@ -1,0 +1,12 @@
+{
+    "$schema": "../schemas/personalAutoPolicyMessage.json",
+    "Policy": {
+        "RecordLOB": "Auto",
+        "PolicyEffectiveDate": "2022-01-01",
+        "PolicyZip5": "12345"
+    },
+    "Vehicle": {
+        "DriverBirthdate": "2022-01-01"
+    },
+    "Coverage": {}
+}
